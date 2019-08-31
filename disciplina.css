@@ -1,0 +1,193 @@
+/*
+Augusto Henrique da Conceição
+Murilo Klug
+*/
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    background-color: #f1f4f5;
+}
+
+body, ul, ol {
+    margin:0;
+    padding:0;
+}
+
+#topo {
+    background-color: #124e83;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.08);
+}
+
+#topo .logo {
+    flex-grow: 2;
+    margin-left: 40px;
+}
+#topo .logo i {
+    font-size: 20px;
+}
+#topo .logo span {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#topo li:hover {
+    background-color: rgba(0,0,0,.1);
+}
+
+#nav-bar {
+    flex-grow: 5;
+}
+#nav-bar ul, .perfil ul {
+    display: flex;
+    align-items: center;
+}
+#nav-bar ul li, #topo .perfil ul li{
+    padding: 25px 15px;
+    cursor: pointer;
+}
+#nav-bar ul li a, #nav-bar ul li a:active{
+    color: #fff
+}
+#nav-bar ul li:nth-child(2) {
+    margin-left: 10px;
+}
+
+#topo .perfil {
+    flex-grow: 0;
+}
+#topo .perfil .foto{
+    flex-grow: 0;
+    border-radius: 100%;
+    width: 30px;
+    margin-left: 10px;
+}
+
+#topo .perfil ul li{
+    margin-left: 10px;
+}
+#topo .perfil ul li:nth-child(3){
+    display: flex;
+    align-items: center;
+    padding: 18px 15px;
+}
+
+#painel {
+    display: flex;
+}
+#painel aside {
+    flex-grow: 1;
+    background-color: #fff;
+    min-width: 250px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.08);
+}
+#painel aside ul {
+    margin-top: 25px;
+}
+#painel aside ul li {
+    padding: 15px 0px 15px 30px;
+    cursor: pointer;
+    color: rgba(118,131,143,.9);
+}
+#painel aside ul li:hover {
+    color: #124e83;
+    background-color: rgba(53,131,202,.07);
+}
+#painel aside ul li.ativo {
+    color: #124e83;
+    background-color: rgba(53,131,202,.07);
+}
+#painel aside ul li i {
+    font-size: 15px;
+}
+#painel aside ul li span {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+#painel .principal {
+    flex-grow: 15;
+    margin-left: 60px;
+}
+#painel .principal .breadcrumb {
+    margin-left: 20px;
+}
+#painel .principal .breadcrumb h1 {
+    color: #37474f;
+    font-weight: 100;
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+#painel .principal .breadcrumb ol {
+    display: flex;
+    font-size: 14px;
+}
+#painel .principal .breadcrumb ol li:nth-child(1) {
+    padding-left: 0;
+}
+#painel .principal .breadcrumb ol li {
+    color: #62a8eb;
+    cursor: pointer;
+    padding: 0px 5px;
+}
+#painel .principal .breadcrumb ol li.ativo {
+    color: #76838f;
+}
+#painel .principal .breadcrumb ol li + li:before {
+    content: "/";
+    margin-right: 10px;
+    color: #d3d9df;
+}
+#painel .principal .aba {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.01);
+    border-radius: 5px;
+    padding: 25px;
+    color: #76838f;
+    margin-top: 30px;
+}
+#painel .principal .aba .disciplina {
+    margin-top: 50px;
+}
+#painel .principal .aba .disciplina article {
+    margin: 0 60px;
+}
+#painel .principal .aba .disciplina article header {
+    background-color: rgb(239, 239, 239);
+    padding: 20px 15px 10px 15px;
+    color: #a3afb7;
+}
+#painel .principal .aba .disciplina article header h2 {
+    font-size: 20px;
+}
+#painel .principal .aba .disciplina article p {
+    font-size: 14px;
+    margin-left: 40px;
+}
+#painel .principal .aba .nav-abas {
+    border-bottom: 1px solid rgb(228, 234, 236);
+}
+#painel .principal .aba .nav-abas ul {
+    font-size: 14px;
+    display: flex;
+}
+#painel .principal .aba .nav-abas li {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+#painel .principal .aba .nav-abas li:hover {
+    border-bottom: 2px solid #ccd5db;
+}
+#painel .principal .aba .nav-abas li.ativo {
+    color: #124e83;
+    font-weight: bold;
+    border-bottom: 2px solid #124e83;
+}
